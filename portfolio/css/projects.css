@@ -1,0 +1,236 @@
+/* ============================================================
+   projects.css — Projects section styles
+   ============================================================ */
+
+#projects {
+  background: var(--bg);
+  position: relative;
+}
+
+#projects::before {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 45, 85, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Grid: 2 cols on desktop, 1 on mobile */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent3), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 245, 255, 0.4);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 245, 255, 0.1);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.card-inner {
+  padding: 24px;
+}
+
+/* Card top: icon + title */
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.game-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #111820, #0d1117);
+}
+
+.game-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-icon-placeholder {
+  font-size: 28px;
+}
+
+.card-title-area {
+  flex: 1;
+  min-width: 0;
+}
+
+.game-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-platform {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Genre tags */
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+}
+
+/* Tag color variants — add more as needed */
+.tag-action     { background: rgba(255, 45,  85,  0.15); color: #ff6680; border: 1px solid rgba(255, 45,  85,  0.3); }
+.tag-racing     { background: rgba(255, 165, 0,   0.15); color: #ffaa44; border: 1px solid rgba(255, 165, 0,   0.3); }
+.tag-multiplayer{ background: rgba(0,   245, 255, 0.12); color: #00f5ff; border: 1px solid rgba(0,   245, 255, 0.3); }
+.tag-offline    { background: rgba(162, 89,  255, 0.15); color: #c88fff; border: 1px solid rgba(162, 89,  255, 0.3); }
+.tag-rpg        { background: rgba(255, 215, 0,   0.12); color: #ffd700; border: 1px solid rgba(255, 215, 0,   0.3); }
+.tag-fps        { background: rgba(255, 100, 0,   0.15); color: #ff7733; border: 1px solid rgba(255, 100, 0,   0.3); }
+.tag-puzzle     { background: rgba(0,   200, 100, 0.15); color: #44ffaa; border: 1px solid rgba(0,   200, 100, 0.3); }
+.tag-survival   { background: rgba(180, 90,  20,  0.20); color: #cc8844; border: 1px solid rgba(180, 90,  20,  0.4); }
+.tag-2d         { background: rgba(100, 200, 255, 0.12); color: #88ddff; border: 1px solid rgba(100, 200, 255, 0.3); }
+.tag-3d         { background: rgba(200, 100, 255, 0.12); color: #dd88ff; border: 1px solid rgba(200, 100, 255, 0.3); }
+
+/* Description */
+.game-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card footer: status + download */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 16px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Orbitron', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+.download-btn:hover {
+  background: white;
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.download-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Live status indicator */
+.card-status {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #44ff88;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-status::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #44ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #44ff88;
+  animation: blink 2s ease infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

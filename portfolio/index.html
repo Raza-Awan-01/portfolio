@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameDev Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo">YourName</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-tag">&lt; game developer /&gt;</div>
+      <h1 class="hero-name">
+        <span class="line1">Your</span>
+        <span class="line2">Name</span>
+      </h1>
+      <p class="hero-sub">Crafting worlds &nbsp;·&nbsp; Building experiences</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Games</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-avatar">
+            <div class="about-avatar-inner">
+              <!-- Replace with: <img src="assets/your-photo.jpg" alt="Your Name"> -->
+              <span class="avatar-icon">🎮</span>
+            </div>
+            <div class="avatar-corner tl"></div>
+            <div class="avatar-corner tr"></div>
+            <div class="avatar-corner bl"></div>
+            <div class="avatar-corner br"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-box"><div class="stat-num">12+</div><div class="stat-label">Games</div></div>
+            <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Years</div></div>
+            <div class="stat-box"><div class="stat-num">50K+</div><div class="stat-label">Downloads</div></div>
+            <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Awards</div></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-header reveal reveal-delay-1">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">The Dev <span>Behind</span> the Code</h2>
+          </div>
+          <p class="about-bio reveal reveal-delay-2">
+            Hey! I'm <strong>Your Name</strong>, an indie game developer passionate about creating
+            immersive experiences that push the limits of storytelling and gameplay mechanics.
+            I've been building games for over <strong>4 years</strong>, working solo and in small teams.
+          </p>
+          <p class="about-bio reveal reveal-delay-3">
+            My games span from fast-paced <strong>racing titles</strong> to deep <strong>RPG adventures</strong>,
+            always with a focus on tight controls, satisfying progression, and memorable moments.
+            I love building systems that make players feel clever.
+          </p>
+          <div class="skills-row reveal reveal-delay-4">
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Unreal Engine</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Blender</span>
+            <span class="skill-tag">Godot</span>
+            <span class="skill-tag">Shader Dev</span>
+            <span class="skill-tag">Game Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">My Work</div>
+        <h2 class="section-title">Featured <span>Games</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="card-inner">
+            <div class="card-top">
+              <div class="game-icon">
+                <!-- Replace with: <img src="assets/game1-icon.png" alt="NitroStrike"> -->
+                <span class="game-icon-placeholder">🏎️</span>
+              </div>
+              <div class="card-title-area">
+                <div class="game-name">NitroStrike Racing</div>
+                <div class="game-platform">Android · iOS</div>
+              </div>
+            </div>
+            <div class="tags-row">
+              <span class="tag tag-racing">Racing</span>
+              <span class="tag tag-multiplayer">Multiplayer</span>
+              <span class="tag tag-3d">3D</span>
+            </div>
+            <p class="game-desc">
+              A high-octane street racing game with real-time multiplayer, dozens of unlockable cars,
+              and dynamic weather systems that change how every race plays out.
+            </p>
+            <div class="card-footer">
+              <span class="card-status">Live</span>
+              <a href="#" class="download-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="card-inner">
+            <div class="card-top">
+              <div class="game-icon">
+                <span class="game-icon-placeholder">⚔️</span>
+              </div>
+              <div class="card-title-area">
+                <div class="game-name">Shadow Realm RPG</div>
+                <div class="game-platform">PC · Windows</div>
+              </div>
+            </div>
+            <div class="tags-row">
+              <span class="tag tag-rpg">RPG</span>
+              <span class="tag tag-offline">Offline</span>
+              <span class="tag tag-2d">2D</span>
+            </div>
+            <p class="game-desc">
+              A deep offline RPG with a sprawling dark fantasy world, branching dialogue trees,
+              and a unique skill-craft system that lets you forge completely custom abilities.
+            </p>
+            <div class="card-footer">
+              <span class="card-status">Live</span>
+              <a href="#" class="download-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="card-inner">
+            <div class="card-top">
+              <div class="game-icon">
+                <span class="game-icon-placeholder">🔫</span>
+              </div>
+              <div class="card-title-area">
+                <div class="game-name">Voidshot Arena</div>
+                <div class="game-platform">PC · Android</div>
+              </div>
+            </div>
+            <div class="tags-row">
+              <span class="tag tag-fps">FPS</span>
+              <span class="tag tag-multiplayer">Multiplayer</span>
+              <span class="tag tag-action">Action</span>
+            </div>
+            <p class="game-desc">
+              A frantic FPS arena shooter set in a collapsing space station. Gravity shifts every 60 seconds
+              forcing players to constantly rethink their strategies.
+            </p>
+            <div class="card-footer">
+              <span class="card-status">Live</span>
+              <a href="#" class="download-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="card-inner">
+            <div class="card-top">
+              <div class="game-icon">
+                <span class="game-icon-placeholder">🧩</span>
+              </div>
+              <div class="card-title-area">
+                <div class="game-name">CipherBox</div>
+                <div class="game-platform">Android · iOS</div>
+              </div>
+            </div>
+            <div class="tags-row">
+              <span class="tag tag-puzzle">Puzzle</span>
+              <span class="tag tag-offline">Offline</span>
+              <span class="tag tag-2d">2D</span>
+            </div>
+            <p class="game-desc">
+              A mind-bending puzzle game with 200+ handcrafted levels built around light refraction,
+              mirrors, and prisms. No tutorials — just pure logic.
+            </p>
+            <div class="card-footer">
+              <span class="card-status">Live</span>
+              <a href="#" class="download-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="section-header reveal">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's <span>Connect</span></h2>
+          </div>
+          <p class="contact-desc reveal reveal-delay-1">
+            Have a collaboration idea, want to feature one of my games, or just want to talk about game dev?
+            I'd love to hear from you.
+          </p>
+          <div class="contact-links reveal reveal-delay-2">
+            <a href="mailto:you@email.com" class="contact-link">
+              <span class="link-icon">✉️</span>
+              <span class="link-label">Email</span>
+              <span class="link-value">you@email.com</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-icon">🎮</span>
+              <span class="link-label">itch.io</span>
+              <span class="link-value">yourname.itch.io</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-icon">💻</span>
+              <span class="link-label">GitHub</span>
+              <span class="link-value">github.com/yourname</span>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="link-icon">🐦</span>
+              <span class="link-label">Twitter / X</span>
+              <span class="link-value">@yourhandle</span>
+            </a>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Collab / Question / Other">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-text">Built with ❤️ by <span>Your Name</span> &nbsp;·&nbsp; Game Developer</p>
+  </footer>
+
+  <!-- JS Files -->
+  <script src="js/cursor.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>
