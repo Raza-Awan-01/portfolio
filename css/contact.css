@@ -1,5 +1,5 @@
 /* ============================================================
-   contact.css — Contact section styles
+    contact.css — Contact section styles
    ============================================================ */
 
 #contact {
@@ -63,13 +63,17 @@
 .contact-link::before {
   content: '';
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   width: 0;
   background: rgba(0, 245, 255, 0.05);
   transition: width 0.3s;
 }
 
-.contact-link:hover::before { width: 100%; }
+.contact-link:hover::before {
+  width: 100%;
+}
 
 .contact-link:hover {
   border-color: rgba(0, 245, 255, 0.4);
@@ -182,9 +186,11 @@
     grid-template-columns: 1fr;
     gap: 48px;
   }
+
   .form-row {
     grid-template-columns: 1fr;
   }
+
   .link-value {
     display: none;
   }

@@ -1,5 +1,5 @@
 /* ============================================================
-   about.css — About section styles
+    about.css — About section styles
    ============================================================ */
 
 #about {
@@ -84,10 +84,30 @@
   border-style: solid;
   opacity: 0.6;
 }
-.avatar-corner.tl { top: 8px;    left: 8px;   border-width: 2px 0 0 2px; }
-.avatar-corner.tr { top: 8px;    right: 8px;  border-width: 2px 2px 0 0; }
-.avatar-corner.bl { bottom: 8px; left: 8px;   border-width: 0 0 2px 2px; }
-.avatar-corner.br { bottom: 8px; right: 8px;  border-width: 0 2px 2px 0; }
+
+.avatar-corner.tl {
+  top: 8px;
+  left: 8px;
+  border-width: 2px 0 0 2px;
+}
+
+.avatar-corner.tr {
+  top: 8px;
+  right: 8px;
+  border-width: 2px 2px 0 0;
+}
+
+.avatar-corner.bl {
+  bottom: 8px;
+  left: 8px;
+  border-width: 0 0 2px 2px;
+}
+
+.avatar-corner.br {
+  bottom: 8px;
+  right: 8px;
+  border-width: 0 2px 2px 0;
+}
 
 /* Stat boxes */
 .about-stats {
@@ -95,7 +115,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 24px;
-  max-width: 340px;
+  max-width: 240px;
 }
 
 .stat-box {
@@ -185,10 +205,12 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .about-avatar {
     max-width: 260px;
     margin: 0 auto;
   }
+
   .about-stats {
     margin: 24px auto 0;
   }

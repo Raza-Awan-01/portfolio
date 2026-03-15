@@ -1,21 +1,21 @@
 /* ============================================================
-   base.css — CSS variables, resets, shared utilities
+    base.css — CSS variables, resets, shared utilities
    ============================================================ */
 
 :root {
-  --bg:           #080b10;
-  --bg2:          #0d1117;
-  --bg3:          #111820;
-  --accent:       #00f5ff;
-  --accent2:      #ff2d55;
-  --accent3:      #a259ff;
-  --gold:         #ffd700;
-  --text:         #e8eaf0;
-  --text-dim:     #7a8599;
-  --card-bg:      #0f1923;
-  --card-border:  rgba(0, 245, 255, 0.15);
-  --glow:         0 0 20px rgba(0, 245, 255, 0.3);
-  --glow2:        0 0 20px rgba(255, 45, 85, 0.3);
+  --bg: #080b10;
+  --bg2: #0d1117;
+  --bg3: #111820;
+  --accent: #00f5ff;
+  --accent2: #ff2d55;
+  --accent3: #a259ff;
+  --gold: #ffd700;
+  --text: #e8eaf0;
+  --text-dim: #7a8599;
+  --card-bg: #0f1923;
+  --card-border: rgba(0, 245, 255, 0.15);
+  --glow: 0 0 20px rgba(0, 245, 255, 0.3);
+  --glow2: 0 0 20px rgba(255, 45, 85, 0.3);
 }
 
 * {
@@ -41,13 +41,11 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.04) 2px,
-    rgba(0, 0, 0, 0.04) 4px
-  );
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.04) 2px,
+      rgba(0, 0, 0, 0.04) 4px);
   pointer-events: none;
   z-index: 9000;
 }
@@ -163,10 +161,21 @@ section {
   transform: translateY(0);
 }
 
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
 
 /* ── Custom cursor ── */
 .cursor {
@@ -219,8 +228,20 @@ footer {
 
 /* ── Mobile base ── */
 @media (max-width: 768px) {
-  .container { padding: 0 20px; }
-  section { padding: 72px 0; }
-  body { cursor: auto; }
-  .cursor, .cursor-ring { display: none; }
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 72px 0;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  .cursor,
+  .cursor-ring {
+    display: none;
+  }
 }

@@ -1,5 +1,5 @@
 /* ============================================================
-   projects.css — Projects section styles
+    projects.css — Projects section styles
    ============================================================ */
 
 #projects {
@@ -138,16 +138,65 @@
 }
 
 /* Tag color variants — add more as needed */
-.tag-action     { background: rgba(255, 45,  85,  0.15); color: #ff6680; border: 1px solid rgba(255, 45,  85,  0.3); }
-.tag-racing     { background: rgba(255, 165, 0,   0.15); color: #ffaa44; border: 1px solid rgba(255, 165, 0,   0.3); }
-.tag-multiplayer{ background: rgba(0,   245, 255, 0.12); color: #00f5ff; border: 1px solid rgba(0,   245, 255, 0.3); }
-.tag-offline    { background: rgba(162, 89,  255, 0.15); color: #c88fff; border: 1px solid rgba(162, 89,  255, 0.3); }
-.tag-rpg        { background: rgba(255, 215, 0,   0.12); color: #ffd700; border: 1px solid rgba(255, 215, 0,   0.3); }
-.tag-fps        { background: rgba(255, 100, 0,   0.15); color: #ff7733; border: 1px solid rgba(255, 100, 0,   0.3); }
-.tag-puzzle     { background: rgba(0,   200, 100, 0.15); color: #44ffaa; border: 1px solid rgba(0,   200, 100, 0.3); }
-.tag-survival   { background: rgba(180, 90,  20,  0.20); color: #cc8844; border: 1px solid rgba(180, 90,  20,  0.4); }
-.tag-2d         { background: rgba(100, 200, 255, 0.12); color: #88ddff; border: 1px solid rgba(100, 200, 255, 0.3); }
-.tag-3d         { background: rgba(200, 100, 255, 0.12); color: #dd88ff; border: 1px solid rgba(200, 100, 255, 0.3); }
+.tag-action {
+  background: rgba(255, 45, 85, 0.15);
+  color: #ff6680;
+  border: 1px solid rgba(255, 45, 85, 0.3);
+}
+
+.tag-racing {
+  background: rgba(255, 165, 0, 0.15);
+  color: #ffaa44;
+  border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.tag-multiplayer {
+  background: rgba(0, 245, 255, 0.12);
+  color: #00f5ff;
+  border: 1px solid rgba(0, 245, 255, 0.3);
+}
+
+.tag-offline {
+  background: rgba(162, 89, 255, 0.15);
+  color: #c88fff;
+  border: 1px solid rgba(162, 89, 255, 0.3);
+}
+
+.tag-rpg {
+  background: rgba(255, 215, 0, 0.12);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.tag-fps {
+  background: rgba(255, 100, 0, 0.15);
+  color: #ff7733;
+  border: 1px solid rgba(255, 100, 0, 0.3);
+}
+
+.tag-puzzle {
+  background: rgba(0, 200, 100, 0.15);
+  color: #44ffaa;
+  border: 1px solid rgba(0, 200, 100, 0.3);
+}
+
+.tag-survival {
+  background: rgba(180, 90, 20, 0.20);
+  color: #cc8844;
+  border: 1px solid rgba(180, 90, 20, 0.4);
+}
+
+.tag-2d {
+  background: rgba(100, 200, 255, 0.12);
+  color: #88ddff;
+  border: 1px solid rgba(100, 200, 255, 0.3);
+}
+
+.tag-3d {
+  background: rgba(200, 100, 255, 0.12);
+  color: #dd88ff;
+  border: 1px solid rgba(200, 100, 255, 0.3);
+}
 
 /* Description */
 .game-desc {
@@ -224,8 +273,15 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 /* Mobile */

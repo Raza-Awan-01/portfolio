@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satoshi Runner | Muhammad Raza</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/projects.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Raza's Portfolio</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO: icon + name + platform + tags -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-grid"></div>
+    <div class="project-hero-content container">
+      <a href="../index.html#projects" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Back to Projects
+      </a>
+      <div class="project-hero-top">
+        <div class="project-hero-icon">
+          <!-- Replace with: <img src="../assets/satoshi-runner/icon.png" alt="Satoshi Runner"> -->
+          🪙
+        </div>
+        <div>
+          <h1 class="project-hero-title">Satoshi Runner</h1>
+          <div class="project-hero-platform">WebGL · Telegram</div>
+        </div>
+      </div>
+      <div class="project-hero-tags">
+        <span class="tag tag-multiplayer">Online</span>
+        <span class="tag tag-3d">3D</span>
+        <span class="tag tag-action">Endless Runner</span>
+        <span class="tag tag-multiplayer">Leaderboards</span>
+        <span class="tag tag-rpg">Web3</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="project-body">
+    <div class="container">
+      <div class="project-layout">
+
+        <div class="project-main">
+
+          <!-- ABOUT -->
+          <div class="desc-section reveal">
+            <div class="video-label">About the Game</div>
+            <div class="project-description">
+              <p>
+                <strong>Satoshi Runner</strong> is a 3D endless runner launched as a
+                <strong>Telegram WebGL Mini App</strong>, built with Adsgram integration and a full
+                backend powered by <strong>Beamable</strong>, deployed via AWS with GitHub Actions CI/CD.
+              </p>
+              <p>
+                Players compete across a <strong>league system</strong> — Bronze, Silver, Gold and
+                beyond — with global leaderboards, <strong>daily login rewards</strong>, and
+                progression systems that keep players coming back every day.
+              </p>
+            </div>
+          </div>
+
+          <!-- TRAILER -->
+          <div class="video-section reveal">
+            <div class="video-label">Gameplay Trailer</div>
+            <div class="video-wrapper">
+              <!--
+                WHEN READY: Replace the placeholder block with your YouTube embed:
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Satoshi Runner Trailer"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+              -->
+              <div class="video-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+                </svg>
+                <span>Trailer coming soon</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCREENSHOTS -->
+          <div class="screenshots-section reveal">
+            <div class="video-label">Screenshots</div>
+            <div class="screenshots-scroll">
+              <!--
+                WHEN READY: Replace each placeholder with:
+                <div class="screenshot-item" onclick="openLightbox(this)">
+                  <img src="../assets/satoshi-runner/screenshot-1.png" alt="Satoshi Runner Screenshot 1">
+                </div>
+                Put images in: assets/satoshi-runner/
+              -->
+              <div class="screenshot-item">
+                <div class="screenshot-placeholder">Screenshot 1</div>
+              </div>
+              <div class="screenshot-item">
+                <div class="screenshot-placeholder">Screenshot 2</div>
+              </div>
+              <div class="screenshot-item">
+                <div class="screenshot-placeholder">Screenshot 3</div>
+              </div>
+              <div class="screenshot-item">
+                <div class="screenshot-placeholder">Screenshot 4</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOWNLOAD / PLAY -->
+          <div class="desc-section reveal">
+            <div class="video-label">Play Now</div>
+            <div style="padding-top: 8px;">
+              <!-- WHEN READY: Add your Telegram/WebGL link and remove the "disabled" class -->
+              <a href="#" class="project-download-btn disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Coming Soon
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-text">Built with ❤️ by <span>Muhammad Raza</span> &nbsp;·&nbsp; Game Developer</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="../js/cursor.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      if (!img) return;
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('open');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) closeLightbox();
+    });
+  </script>
+</body>
+
+</html>
