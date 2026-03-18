@@ -19,23 +19,46 @@
   pointer-events: none;
 }
 
-/* Grid layout */
+/* About layout - stacked vertically for ALL screens */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 64px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Avatar */
+/* About Me header */
+.about-grid>.section-header {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/* Title container - now full width */
+.about-title-right {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.about-title-right .section-title {
+  font-size: 42px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Visual container - centered */
 .about-visual {
-  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .about-avatar {
   width: 100%;
   aspect-ratio: 1;
-  max-width: 340px;
+  max-width: 280px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   position: relative;
@@ -53,7 +76,6 @@
   position: relative;
 }
 
-/* If using an actual photo, it fills the box */
 .about-avatar-inner img {
   width: 100%;
   height: 100%;
@@ -62,7 +84,7 @@
 }
 
 .avatar-icon {
-  font-size: 120px;
+  font-size: 100px;
   position: relative;
   z-index: 1;
 }
@@ -109,13 +131,14 @@
   border-width: 0 2px 2px 0;
 }
 
-/* Stat boxes */
+/* Stat boxes - centered */
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 24px;
-  max-width: 240px;
+  max-width: 280px;
+  width: 100%;
 }
 
 .stat-box {
@@ -155,9 +178,10 @@
   margin-top: 4px;
 }
 
-/* Text side */
-.about-text .section-header {
-  margin-bottom: 32px;
+/* Text content */
+.about-text-content {
+  width: 100%;
+  margin-top: 20px;
 }
 
 .about-bio {
@@ -199,19 +223,48 @@
   color: white;
 }
 
-/* Mobile */
+/* Remove the old row layout since we're stacking */
+.about-row {
+  display: contents;
+  /* This makes the div act as if it doesn't exist */
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .about-title-right .section-title {
+    font-size: 32px;
+  }
+
+  .avatar-icon {
+    font-size: 70px;
   }
 
   .about-avatar {
-    max-width: 260px;
-    margin: 0 auto;
+    max-width: 200px;
   }
 
   .about-stats {
-    margin: 24px auto 0;
+    max-width: 200px;
+  }
+
+  .stat-num {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .about-bio {
+    font-size: 15px;
+  }
+
+  .skills-row {
+    justify-content: center;
+  }
+
+  .skill-tag {
+    font-size: 11px;
+    padding: 5px 12px;
   }
 }

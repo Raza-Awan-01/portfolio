@@ -18,7 +18,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 50% 30%, rgba(0,245,255,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 70% 60% at 50% 30%, rgba(0, 245, 255, 0.07) 0%, transparent 70%),
     linear-gradient(180deg, #080b10 0%, #0d1117 100%);
 }
 
@@ -26,8 +26,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0,245,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,245,255,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 90% 90% at 50% 50%, black 20%, transparent 100%);
 }
@@ -52,14 +52,19 @@
   transition: color 0.3s;
 }
 
-.back-btn:hover { color: var(--accent); }
+.back-btn:hover {
+  color: var(--accent);
+}
 
 .back-btn svg {
-  width: 14px; height: 14px;
+  width: 14px;
+  height: 14px;
   transition: transform 0.3s;
 }
 
-.back-btn:hover svg { transform: translateX(-4px); }
+.back-btn:hover svg {
+  transform: translateX(-4px);
+}
 
 .project-hero-top {
   display: flex;
@@ -69,9 +74,10 @@
 }
 
 .project-hero-icon {
-  width: 80px; height: 80px;
+  width: 80px;
+  height: 80px;
   border-radius: 16px;
-  border: 1px solid rgba(0,245,255,0.25);
+  border: 1px solid rgba(0, 245, 255, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +87,8 @@
 }
 
 .project-hero-icon img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 14px;
 }
@@ -124,7 +131,9 @@
 }
 
 /* ── Video embed ── */
-.video-section { margin-bottom: 48px; }
+.video-section {
+  margin-bottom: 48px;
+}
 
 .video-label {
   font-family: 'Share Tech Mono', monospace;
@@ -140,7 +149,8 @@
 
 .video-label::before {
   content: '';
-  width: 24px; height: 1px;
+  width: 24px;
+  height: 1px;
   background: var(--accent);
 }
 
@@ -155,14 +165,16 @@
 }
 
 .video-wrapper iframe {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   border: none;
   display: block;
 }
 
 /* Placeholder shown when no video yet */
 .video-placeholder {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +184,8 @@
 }
 
 .video-placeholder svg {
-  width: 48px; height: 48px;
+  width: 48px;
+  height: 48px;
   opacity: 0.3;
 }
 
@@ -184,7 +197,9 @@
 }
 
 /* ── Screenshots ── */
-.screenshots-section { margin-bottom: 48px; }
+.screenshots-section {
+  margin-bottom: 48px;
+}
 
 .screenshots-scroll {
   display: flex;
@@ -192,13 +207,19 @@
   overflow-x: auto;
   padding-bottom: 12px;
   scrollbar-width: thin;
-  scrollbar-color: rgba(0,245,255,0.3) transparent;
+  scrollbar-color: rgba(0, 245, 255, 0.3) transparent;
 }
 
-.screenshots-scroll::-webkit-scrollbar { height: 4px; }
-.screenshots-scroll::-webkit-scrollbar-track { background: transparent; }
+.screenshots-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.screenshots-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .screenshots-scroll::-webkit-scrollbar-thumb {
-  background: rgba(0,245,255,0.3);
+  background: rgba(0, 245, 255, 0.3);
   border-radius: 2px;
 }
 
@@ -215,22 +236,26 @@
 }
 
 .screenshot-item:hover {
-  border-color: rgba(0,245,255,0.5);
+  border-color: rgba(0, 245, 255, 0.5);
   transform: translateY(-3px);
 }
 
 .screenshot-item img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 0.4s;
 }
 
-.screenshot-item:hover img { transform: scale(1.04); }
+.screenshot-item:hover img {
+  transform: scale(1.04);
+}
 
 /* Placeholder screenshot tile */
 .screenshot-placeholder {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,7 +267,9 @@
 }
 
 /* ── Description ── */
-.desc-section { margin-bottom: 48px; }
+.desc-section {
+  margin-bottom: 48px;
+}
 
 .project-description {
   font-size: 16px;
@@ -250,9 +277,18 @@
   color: var(--text-dim);
 }
 
-.project-description p { margin-bottom: 16px; }
-.project-description p:last-child { margin-bottom: 0; }
-.project-description strong { color: var(--text); font-weight: 600; }
+.project-description p {
+  margin-bottom: 16px;
+}
+
+.project-description p:last-child {
+  margin-bottom: 0;
+}
+
+.project-description strong {
+  color: var(--text);
+  font-weight: 600;
+}
 
 /* ── Sidebar ── */
 .project-sidebar {
@@ -274,8 +310,10 @@
 .sidebar-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 1px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
   background: linear-gradient(90deg, var(--accent), transparent);
 }
 
@@ -293,11 +331,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   font-size: 14px;
 }
 
-.sidebar-row:last-child { border-bottom: none; padding-bottom: 0; }
+.sidebar-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
 .sidebar-row-label {
   color: var(--text-dim);
@@ -332,18 +373,18 @@
   cursor: pointer;
   clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
   transition: all 0.3s;
-  box-shadow: 0 0 30px rgba(0,245,255,0.35);
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.35);
   width: 100%;
 }
 
 .project-download-btn:hover {
   background: white;
-  box-shadow: 0 0 50px rgba(0,245,255,0.6);
+  box-shadow: 0 0 50px rgba(0, 245, 255, 0.6);
   transform: translateY(-2px);
 }
 
 .project-download-btn.disabled {
-  background: rgba(0,245,255,0.15);
+  background: rgba(0, 245, 255, 0.15);
   color: var(--text-dim);
   box-shadow: none;
   cursor: not-allowed;
@@ -356,24 +397,27 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.92);
+  background: rgba(0, 0, 0, 0.92);
   z-index: 9999;
   align-items: center;
   justify-content: center;
 }
 
-.lightbox.open { display: flex; }
+.lightbox.open {
+  display: flex;
+}
 
 .lightbox img {
   max-width: 90vw;
   max-height: 85vh;
   object-fit: contain;
-  border: 1px solid rgba(0,245,255,0.2);
+  border: 1px solid rgba(0, 245, 255, 0.2);
 }
 
 .lightbox-close {
   position: absolute;
-  top: 24px; right: 32px;
+  top: 24px;
+  right: 32px;
   font-family: 'Orbitron', monospace;
   font-size: 20px;
   color: var(--text-dim);
@@ -381,21 +425,115 @@
   transition: color 0.2s;
 }
 
-.lightbox-close:hover { color: var(--accent); }
+.lightbox-close:hover {
+  color: var(--accent);
+}
 
 /* ── Mobile ── */
 @media (max-width: 900px) {
   .project-layout {
     grid-template-columns: 1fr;
   }
+
   .project-sidebar {
     position: static;
   }
-  .screenshot-item { width: 220px; }
+
+  .screenshot-item {
+    width: 220px;
+  }
 }
 
 @media (max-width: 768px) {
-  .project-hero { padding-top: 80px; padding-bottom: 40px; }
-  .project-hero-title { font-size: 32px; }
-  .project-hero-icon { width: 60px; height: 60px; font-size: 28px; }
+  .project-hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .project-hero-title {
+    font-size: 32px;
+  }
+
+  .project-hero-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}
+
+/* Gameplay Video */
+@media (max-width: 768px) {
+  .video-wrapper {
+    width: calc(100vw - 40px) !important;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .video-section {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+/* Fix download button width to match trailer */
+@media (max-width: 768px) {
+  .project-download-btn {
+    width: calc(100vw - 40px) !important;
+    /* Same as trailer fix */
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /* Make sure the container doesn't restrict it */
+  .desc-section:last-child {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Force screenshots to match trailer width */
+@media (max-width: 768px) {
+  .screenshots-section {
+    width: 100%;
+    position: relative;
+  }
+
+  /* Make the scroll container match the container padding */
+  .screenshots-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding-bottom: 12px;
+    /* Add left padding to match where trailer starts */
+    padding-left: 48px;
+    /* Match container padding from base.css */
+    padding-right: 0;
+    margin-left: -48px;
+    /* Counteract container padding */
+    width: calc(100% + 48px);
+    /* Extend to edge */
+  }
+
+  .screenshot-item {
+    flex-shrink: 0;
+    width: 280px;
+  }
+
+  /* Fade effect on right */
+  .screenshots-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    background: linear-gradient(90deg, transparent, var(--bg2));
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.9;
+  }
 }
