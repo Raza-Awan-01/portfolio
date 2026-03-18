@@ -130,6 +130,15 @@
   align-items: start;
 }
 
+.project-layout>.project-main:only-child {
+  grid-column: 1 / -1;
+}
+
+.project-main,
+.screenshots-section {
+  min-width: 0;
+}
+
 /* ── Video embed ── */
 .video-section {
   margin-bottom: 48px;
@@ -202,10 +211,16 @@
 }
 
 .screenshots-scroll {
+  border: 1px solid var(--card-border);
   display: flex;
   gap: 16px;
-  overflow-x: auto;
+  overflow-x: visible;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 100%;
   padding-bottom: 12px;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 245, 255, 0.3) transparent;
 }
@@ -223,17 +238,18 @@
   border-radius: 2px;
 }
 
-/* .screenshot-item {
-  flex-shrink: 0;
-  width: 280px;
-  aspect-ratio: 16/9;
+.screenshot-item {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  /* aspect-ratio: 16/9; */
   border: 1px solid var(--card-border);
   overflow: hidden;
   clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
   background: var(--card-bg);
   transition: border-color 0.3s, transform 0.3s;
   cursor: pointer;
-} */
+}
 
 .screenshot-item:hover {
   border-color: rgba(0, 245, 255, 0.5);
@@ -493,6 +509,7 @@
   }
 }
 
+
 /* Fix footer text wrapping on mobile for project pages */
 @media (max-width: 768px) {
   footer .footer-text {
@@ -514,15 +531,23 @@
 @media (max-width: 900px) {
   .screenshots-scroll {
     display: flex;
+    flex-wrap: nowrap;
     gap: 12px;
     overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    max-width: 100%;
     -webkit-overflow-scrolling: touch;
-    padding: 5px 0 15px 0;
+    padding: 5px 0 15px;
+    touch-action: pan-x;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
   }
 
   .screenshot-item {
     flex: 0 0 auto;
     width: 240px;
+    scroll-snap-align: start;
   }
 }
 
@@ -530,20 +555,4 @@
   .screenshot-item {
     width: 200px;
   }
-}
-
-/* Optional fade effect */
-.screenshots-section {
-  position: relative;
-}
-
-.screenshots-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50px;
-  background: linear-gradient(90deg, transparent, var(--bg2));
-  pointer-events: none;
 }
