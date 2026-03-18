@@ -7,6 +7,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  box-sizing: border-box;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -73,8 +75,17 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding: 4px;
+  padding: 8px;
+  /* INCREASED for better touch target */
   z-index: 1001;
+  position: relative;
+  /* ADD THIS */
+  right: 0;
+  /* ADD THIS */
+  background: transparent;
+  /* ADD THIS */
+  border: none;
+  /* ADD THIS */
 }
 
 .hamburger span {
@@ -88,6 +99,22 @@ nav {
 @media (max-width: 768px) {
   nav {
     padding: 14px 20px;
+    justify-content: space-between;
+    /* MAKE SURE THIS IS HERE */
+    align-items: center;
+    /* MAKE SURE THIS IS HERE */
+  }
+
+  .hamburger {
+    display: flex;
+    /* This shows it on mobile */
+    order: 2;
+    /* ADD THIS - pushes it to the right */
+  }
+
+  .nav-logo {
+    order: 1;
+    /* ADD THIS - keeps logo on left */
   }
 
   .nav-links {
@@ -112,9 +139,5 @@ nav {
 
   .nav-links a {
     font-size: 16px;
-  }
-
-  .hamburger {
-    display: flex;
   }
 }

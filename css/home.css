@@ -73,7 +73,10 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 0 24px;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-tag {
@@ -96,6 +99,7 @@
   margin-bottom: 16px;
   opacity: 0;
   animation: fade-up 0.8s ease 0.5s forwards;
+  word-break: break-word;
 }
 
 .hero-name .line1 {
@@ -136,14 +140,19 @@
 .scroll-indicator {
   position: absolute;
   bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   opacity: 0;
   animation: fade-up 0.8s ease 1.2s forwards;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  pointer-events: none;
 }
 
 .scroll-indicator span {
@@ -151,6 +160,8 @@
   font-size: 11px;
   letter-spacing: 3px;
   color: var(--text-dim);
+  display: block;
+  text-align: center;
 }
 
 .scroll-line {
@@ -158,6 +169,7 @@
   height: 48px;
   background: linear-gradient(to bottom, var(--accent), transparent);
   animation: pulse-line 2s ease infinite;
+  margin: 0 auto;
 }
 
 @keyframes pulse-line {
@@ -183,5 +195,23 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-indicator {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: clamp(36px, 10vw, 42px);
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 0 10px;
   }
 }
