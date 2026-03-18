@@ -218,6 +218,7 @@
   font-size: 12px;
   color: var(--text-dim);
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .footer-text span {
@@ -255,5 +256,25 @@
 
   .submit-btn {
     align-self: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    overflow-x: auto;
+    /* ADD THIS - allows scroll if needed */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .footer-text {
+    font-size: 11px;
+    /* Slightly smaller on mobile */
+    letter-spacing: 1px;
+    white-space: nowrap;
+    display: inline-block;
+    /* ADD THIS */
+    padding: 0 10px;
+    /* ADD THIS */
   }
 }
