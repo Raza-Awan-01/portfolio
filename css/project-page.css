@@ -293,6 +293,34 @@
   color: var(--text-dim);
 }
 
+.project-feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.project-feature-list li {
+  position: relative;
+  padding: 14px 16px 14px 46px;
+  border: 1px solid rgba(0, 245, 255, 0.14);
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.06), rgba(255, 255, 255, 0.02));
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.project-feature-list li::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  box-shadow: 0 0 16px rgba(0, 245, 255, 0.45);
+}
+
 .project-description p {
   margin-bottom: 16px;
 }
