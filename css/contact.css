@@ -207,6 +207,13 @@
   transform: translateY(-3px);
 }
 
+.footer-social-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: 30px;

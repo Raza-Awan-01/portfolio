@@ -10,7 +10,11 @@ Personal portfolio website showcasing my games and experience as a game develope
 
 ```
 portfolio/
+├── .github/
+│   └── workflows/
+│       └── static.yml          ← GitHub Pages deployment workflow
 ├── index.html                  ← Main single-page portfolio
+├── README.md
 ├── css/
 │   ├── base.css                ← CSS variables, resets, shared utilities, footer
 │   ├── nav.css                 ← Navbar & hamburger menu
@@ -31,10 +35,12 @@ portfolio/
 │   ├── gt-mega-ramp.html       ← GT Mega Ramp project page
 │   └── satoshi-runner.html     ← Satoshi Runner project page
 └── assets/
-    ├── star-clash/             ← Icon & screenshots for Star Clash
-    ├── divine-chess/           ← Icon & screenshots for Divine Chess
-    ├── gt-mega-ramp/           ← Icon & screenshots for GT Mega Ramp
-    └── satoshi-runner/         ← Icon & screenshots for Satoshi Runner
+    ├── profile/                ← Hero/profile images
+    ├── social/                 ← Footer social icons (GitHub, LinkedIn, Discord)
+    ├── star-clash/             ← Icon + 5 screenshots
+    ├── divine-chess/           ← Icon + 4 screenshots
+    ├── gt-mega-ramp/           ← Icon + 6 screenshots
+    └── satoshi-runner/         ← Icon + 4 screenshots
 ```
 
 ---
