@@ -136,6 +136,13 @@
   justify-content: center;
 }
 
+.hero-cv-btn {
+  display: inline-block;
+  margin-top: 16px;
+  opacity: 0;
+  animation: fade-up 0.8s ease 1.05s forwards;
+}
+
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute;
