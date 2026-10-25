@@ -39,6 +39,7 @@ portfolio/
 └── assets/
     ├── profile/                ← Hero/profile images
     ├── social/                 ← Footer social icons (GitHub, LinkedIn, Discord)
+    ├── urban-car-racing/       ← 7 screenshots
     ├── star-clash/             ← Icon + 5 screenshots
     ├── divine-chess/           ← Icon + 4 screenshots
     ├── gt-mega-ramp/           ← Icon + 6 screenshots
