@@ -159,20 +159,7 @@
   <script src="../js/cursor.js"></script>
   <script src="../js/nav.js"></script>
   <script src="../js/scroll.js"></script>
-  <script>
-    function openLightbox(el) {
-      const img = el.querySelector('img');
-      if (!img) return;
-      document.getElementById('lightbox-img').src = img.src;
-      document.getElementById('lightbox').classList.add('open');
-    }
-    function closeLightbox() {
-      document.getElementById('lightbox').classList.remove('open');
-    }
-    document.getElementById('lightbox').addEventListener('click', function (e) {
-      if (e.target === this) closeLightbox();
-    });
-  </script>
+  <script src="../js/lightbox.js"></script>
 </body>
 
 </html>

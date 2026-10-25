@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Car Racing | Muhammad Raza</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/projects.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Raza's Portfolio</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO: icon + name + platform + tags -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-grid"></div>
+    <div class="project-hero-content container">
+      <a href="../index.html#projects" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Back to Projects
+      </a>
+      <div class="project-hero-top">
+        <div class="project-hero-icon">
+          <!-- WHEN READY: replace with <img src="../assets/urban-car-racing/icon.png" alt="Urban Car Racing"> -->
+          🏎️
+        </div>
+        <div>
+          <h1 class="project-hero-title">Urban Car Racing</h1>
+          <div class="project-hero-platform">Android</div>
+        </div>
+      </div>
+      <div class="project-hero-tags">
+        <span class="tag tag-offline">Offline</span>
+        <span class="tag tag-offline">vs AI</span>
+        <span class="tag tag-3d">3D</span>
+        <span class="tag tag-racing">Car Racing</span>
+        <span class="tag tag-action">Drift &amp; Nitro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="project-body">
+    <div class="container">
+      <div class="project-layout">
+
+        <div class="project-main">
+
+          <!-- ABOUT -->
+          <div class="desc-section reveal">
+            <div class="video-label">My Role in Project</div>
+            <div class="project-description">
+              <ul class="project-feature-list">
+                <li>Developed a <strong>3D arcade street racing game in Unity (URP)</strong> set in a full city, with
+                  a <strong>career map of 6 levels</strong> across three level types — <strong>Race, Time and
+                    Key</strong>.</li>
+                <li>Built a <strong>custom car controller</strong> with drifting, body sway, tire smoke, skid marks
+                  and a <strong>nitro boost system</strong>, with per-car stats driven by ScriptableObjects.</li>
+                <li>Created <strong>AI opponents</strong> that follow racing lines, avoid walls with a
+                  <strong>raycast sensor ring</strong>, brake for turns and U-turns, and match their pace to the
+                  player by difficulty.</li>
+                <li>Added <strong>AI stuck recovery</strong> — reversing out of walls, and respawning at the next
+                  checkpoint if still stuck.</li>
+                <li>Implemented a <strong>checkpoint race system</strong> with live positions, a guide arrow, a
+                  finish board, and a <strong>circular minimap</strong> showing the road network, route, player and
+                  AI cars.</li>
+                <li>Built a <strong>garage with 5 cars</strong>, an orbit camera to inspect each car, and
+                  <strong>paint customization</strong>.</li>
+                <li>Designed progression with <strong>coins based on finishing position</strong>, up to
+                  <strong>5 stars per level</strong>, and saved career progress.</li>
+                <li>Added <strong>mobile touch controls</strong> with auto throttle and steering sensitivity, a
+                  dynamic chase camera with look-behind, speed lines, and platform-tuned post-processing.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- TRAILER
+               WHEN READY: uncomment and paste the YouTube embed link -->
+          <!--
+          <div class="video-section reveal">
+            <div class="video-label">Gameplay Video</div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Urban Car Racing Gameplay Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          -->
+
+          <!-- SCREENSHOTS
+               WHEN READY: uncomment and add images to assets/urban-car-racing/ -->
+          <!--
+          <div class="screenshots-section reveal">
+            <div class="video-label">Screenshots</div>
+            <div class="screenshots-scroll">
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/urban-car-racing/screenshot-1.png" alt="Urban Car Racing Screenshot 1">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/urban-car-racing/screenshot-2.png" alt="Urban Car Racing Screenshot 2">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/urban-car-racing/screenshot-3.png" alt="Urban Car Racing Screenshot 3">
+              </div>
+            </div>
+          </div>
+          -->
+
+          <!-- DOWNLOAD -->
+          <div class="desc-section reveal">
+            <div class="video-label">Download</div>
+            <div style="padding-top: 8px;">
+              <!-- WHEN READY: Add your link, remove the "disabled" class and change the text to "Download APK" -->
+              <a href="#" class="project-download-btn disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Coming Soon
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-text">Built with ❤️ by <span>Muhammad Raza</span> &nbsp;·&nbsp; Game Developer</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="../js/cursor.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

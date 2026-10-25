@@ -28,8 +28,10 @@ portfolio/
 │   ├── particles.js            ← Floating hero particles
 │   ├── nav.js                  ← Hamburger toggle & active link highlight
 │   ├── scroll.js               ← Scroll reveal animations
-│   └── contact.js              ← Contact form submit handler
+│   ├── contact.js              ← Contact form submit handler
+│   └── lightbox.js             ← Screenshot viewer (arrows, swipe, keyboard)
 ├── projects/
+│   ├── urban-car-racing.html   ← Urban Car Racing project page
 │   ├── star-clash.html         ← Star Clash project page
 │   ├── divine-chess.html       ← Divine Chess project page
 │   ├── gt-mega-ramp.html       ← GT Mega Ramp project page
