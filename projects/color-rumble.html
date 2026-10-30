@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Rumble | Muhammad Raza</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/projects.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Raza's Portfolio</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO: icon + name + platform + tags -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-grid"></div>
+    <div class="project-hero-content container">
+      <a href="../index.html#projects" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Back to Projects
+      </a>
+      <div class="project-hero-top">
+        <div class="project-hero-icon">
+          <img src="../assets/color-rumble/icon.png" alt="Color Rumble">
+        </div>
+        <div>
+          <h1 class="project-hero-title">Color Rumble</h1>
+          <div class="project-hero-platform">PC · Android</div>
+        </div>
+      </div>
+      <div class="project-hero-tags">
+        <span class="tag tag-multiplayer">Multiplayer</span>
+        <span class="tag tag-offline">vs AI</span>
+        <span class="tag tag-2d">2D</span>
+        <span class="tag tag-offline">Turn-Based</span>
+        <span class="tag tag-action">Fighting</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="project-body">
+    <div class="container">
+      <div class="project-layout">
+
+        <div class="project-main">
+
+          <!-- ABOUT -->
+          <div class="desc-section reveal">
+            <div class="video-label">My Role in Project</div>
+            <div class="project-description">
+              <ul class="project-feature-list">
+                <li>Worked on a <strong>2D turn-based fighting game in Unity using Photon Fusion</strong>, where two
+                  players each bring a <strong>team of 3 characters</strong> into a match.</li>
+                <li>Implemented the <strong>turn system</strong> — players pick an action within a timer, then swaps,
+                  defends and abilities are resolved in order.</li>
+                <li>Implemented the <strong>color matchup rules</strong> that decide which ability goes first, along
+                  with chain actions for the player who wins the matchup.</li>
+                <li>Built <strong>character abilities and status effects</strong>, with character and ability data
+                  stored in ScriptableObjects.</li>
+                <li>Added game modes including <strong>Quick Match, Rank Match, VS AI, Survival and Arcade</strong>,
+                  with an Elo-style rating for ranked games.</li>
+                <li>Created an <strong>AI opponent</strong> that picks moves using configurable ability weights.</li>
+                <li>Added <strong>character collection and upgrades</strong>, stasis pods, daily rewards and daily
+                  missions, using <strong>Unity Cloud Save and Cloud Code</strong>.</li>
+                <li>Integrated a <strong>shop with in-app purchases</strong> and <strong>ads through
+                    LevelPlay</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- TRAILER -->
+          <div class="video-section reveal">
+            <div class="video-label">Gameplay Video</div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/n6ofrw1fwjY" title="Color Rumble Gameplay Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- SCREENSHOTS -->
+          <div class="screenshots-section reveal">
+            <div class="video-label">Screenshots</div>
+            <div class="screenshots-scroll">
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-1.png" alt="Color Rumble Screenshot 1">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-2.png" alt="Color Rumble Screenshot 2">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-3.png" alt="Color Rumble Screenshot 3">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-4.png" alt="Color Rumble Screenshot 4">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-5.png" alt="Color Rumble Screenshot 5">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-6.png" alt="Color Rumble Screenshot 6">
+              </div>
+              <div class="screenshot-item" onclick="openLightbox(this)">
+                <img src="../assets/color-rumble/screenshot-7.png" alt="Color Rumble Screenshot 7">
+              </div>
+            </div>
+          </div>
+
+          <!-- DOWNLOAD -->
+          <div class="desc-section reveal">
+            <div class="video-label">Download</div>
+            <div style="padding-top: 8px;">
+              <a href="#" class="project-download-btn disabled">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Private Client Project — NDA
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-text">Built with ❤️ by <span>Muhammad Raza</span> &nbsp;·&nbsp; Game Developer</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="../js/cursor.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

@@ -35,15 +35,17 @@ portfolio/
 │   ├── star-clash.html         ← Star Clash project page
 │   ├── divine-chess.html       ← Divine Chess project page
 │   ├── gt-mega-ramp.html       ← GT Mega Ramp project page
-│   └── satoshi-runner.html     ← Satoshi Runner project page
+│   ├── satoshi-runner.html     ← Satoshi Runner project page
+│   └── color-rumble.html       ← Color Rumble project page
 └── assets/
     ├── profile/                ← Hero/profile images
     ├── social/                 ← Footer social icons (GitHub, LinkedIn, Discord)
-    ├── urban-car-racing/       ← 7 screenshots
+    ├── urban-car-racing/       ← Icon + 7 screenshots
     ├── star-clash/             ← Icon + 5 screenshots
     ├── divine-chess/           ← Icon + 4 screenshots
     ├── gt-mega-ramp/           ← Icon + 6 screenshots
-    └── satoshi-runner/         ← Icon + 4 screenshots
+    ├── satoshi-runner/         ← Icon + 4 screenshots
+    └── color-rumble/           ← Icon + 7 screenshots
 ```
 
 ---
